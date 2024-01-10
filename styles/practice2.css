@@ -84,3 +84,36 @@ nav .page2 > a {
     grid-row: 4;
   }
 }
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .view {
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(4, 10em);
+    justify-content: center;
+    row-gap: 1em;
+  }
+  .one {
+    color: white;
+    background-color: #e71e64;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    color: white;
+    background-color: #fc9b19;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .three {
+    color: white;
+    background-color: #a93bb6;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .four {
+    color: white;
+    background-color: #576c79;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}

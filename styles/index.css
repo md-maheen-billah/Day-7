@@ -12,6 +12,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  margin: 2em auto;
 }
 .content {
   position: relative;
@@ -78,6 +79,15 @@ nav .page0 > a {
   padding: 5px;
 }
 @media screen and (max-width: 576px) {
+  .content h2 {
+    position: absolute;
+    font-size: 7em;
+  }
+  main {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .content h2 {
     position: absolute;
     font-size: 7em;
