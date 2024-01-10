@@ -1,0 +1,64 @@
+nav .page1 {
+  background-color: salmon;
+  border: 1px solid black;
+  border-style: groove;
+  border-radius: 5px;
+  color: black;
+}
+nav .page1 > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------------Practice-styles------------------ */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+.container {
+  margin: 2em 2em;
+}
+.view {
+  display: flex;
+  align-items: center;
+  height: 25em;
+  gap: 1.5em;
+}
+.left {
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  background-color: lightyellow;
+  border-radius: 10px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25em;
+    gap: 1.5em;
+  }
+  .left {
+    width: 100%;
+    height: 30%;
+  }
+  .right {
+    width: 100%;
+    height: 70%;
+  }
+}
