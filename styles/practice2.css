@@ -24,96 +24,61 @@ nav .page2 > a {
 .view h1 {
   padding: 10px 0px 0px 10px;
 }
-.view {
-  display: grid;
-  gap: 0.5em;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 200px);
-  justify-content: center;
-}
 
 .one {
   color: white;
   background-color: #e71e64;
-  grid-row: span 2;
-  grid-column: span 2;
+  grid-area: one;
 }
 .two {
   color: white;
   background-color: #fc9b19;
-  grid-column: span 2;
+  grid-area: two;
 }
 .three {
   color: white;
   background-color: #a93bb6;
+  grid-area: three;
 }
 .four {
   color: white;
   background-color: #576c79;
+  grid-area: four;
+}
+
+.view {
+  display: grid;
+  gap: 0.5em;
+  justify-content: center;
+  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(4, 200px);
+  grid-template-areas:
+    "one one two two"
+    "one one three four";
 }
 
 @media screen and (max-width: 576px) {
   .view {
-    grid-template-columns: 90%;
     grid-template-rows: repeat(4, 10em);
-    justify-content: center;
+    grid-template-columns: 90%;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
     row-gap: 1em;
-  }
-  .one {
-    color: white;
-    background-color: #e71e64;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .two {
-    color: white;
-    background-color: #fc9b19;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .three {
-    color: white;
-    background-color: #a93bb6;
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .four {
-    color: white;
-    background-color: #576c79;
-    grid-column: 1;
-    grid-row: 4;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .view {
-    grid-template-columns: 90%;
     grid-template-rows: repeat(4, 10em);
-    justify-content: center;
+    grid-template-columns: 90%;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
     row-gap: 1em;
-  }
-  .one {
-    color: white;
-    background-color: #e71e64;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .two {
-    color: white;
-    background-color: #fc9b19;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .three {
-    color: white;
-    background-color: #a93bb6;
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .four {
-    color: white;
-    background-color: #576c79;
-    grid-column: 1;
-    grid-row: 4;
   }
 }
