@@ -35,14 +35,13 @@ nav .page2 > a {
 .one {
   color: white;
   background-color: #e71e64;
-  grid-column: 1/3;
-  grid-row: 1 / 3;
+  grid-row: span 2;
+  grid-column: span 2;
 }
 .two {
   color: white;
   background-color: #fc9b19;
-  grid-column: 3/5;
-  grid-row: 1 / 2;
+  grid-column: span 2;
 }
 .three {
   color: white;
@@ -55,7 +54,7 @@ nav .page2 > a {
 
 @media screen and (max-width: 576px) {
   .view {
-    grid-template-columns: repeat(1, 90%);
+    grid-template-columns: 90%;
     grid-template-rows: repeat(4, 10em);
     justify-content: center;
     row-gap: 1em;
